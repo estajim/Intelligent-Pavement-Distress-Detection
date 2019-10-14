@@ -1,0 +1,50 @@
+<annotation>
+	<folder>test xml_to_csv</folder>
+	<filename>Capture.PNG</filename>
+	<path>C:\Mostafa\Github Projects\Intelligent-Pavement-Distress-Detection\test xml_to_csv\Capture.PNG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1277</width>
+		<height>946</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>label1</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>328</xmin>
+			<ymin>361</ymin>
+			<xmax>728</xmax>
+			<ymax>641</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>label2</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>844</xmin>
+			<ymin>293</ymin>
+			<xmax>1216</xmax>
+			<ymax>613</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>label3</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>246</xmin>
+			<ymin>877</ymin>
+			<xmax>568</xmax>
+			<ymax>946</ymax>
+		</bndbox>
+	</object>
+</annotation>
