@@ -47,8 +47,7 @@ def print_child_features(element):
     if not getattr(element, 'features', None):
         return
     for feature in element.features():
-        print
-        feature.name
+        print(feature.name)
         print_child_features(feature)
 
 
@@ -69,10 +68,11 @@ def xml_to_csv(path):
             #print(len(features))
             #print(features[0].features())
             f2 = list(features[0].features())
-            len(f2)
+            print(len(f2))
+            print(f2)
             #print(f2[0])
             #print(f2[0].name)
-            #E()
+            E()
             for item in features[0].features():
                 print(item.iter())
                 for itemm in item.LineString:
@@ -140,7 +140,6 @@ def xml_to_csv(path):
 
 def main():
     image_path = os.path.join(os.getcwd(), 'DE_annotations_byKML')
-    print(image_path)
     xml_df = xml_to_csv(image_path)
     xml_df.to_csv('training_from_KML.csv', index=None)
     print('Successfully converted xml to csv.')
