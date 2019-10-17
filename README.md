@@ -6,6 +6,7 @@ This Repo includes my works in detection of standardized pavement distresses and
 
 # Self Updates/notes
 A branch, namely parallel, keeps the unsure progress and was updated revently on 10/16/2019 11:48 pm.
+
 test2.py creates an input table which contains all the necessary information for the xml file with all the annotation details
 create_annotation2 takes the input table and create xml annotation for each img
 
@@ -19,4 +20,5 @@ Problems so far:
 
 4. in test2.py, you need to make a collection of distresses and assign it to the objects
 
+To build to AI model, I am following the link:https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/ with the example dataset in https://github.com/experiencor/kangaroo/tree/master/annots
 
