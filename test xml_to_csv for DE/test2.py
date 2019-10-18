@@ -7,12 +7,25 @@ import sys
 import math
 #from pykml import parser
 from fastkml import kml
-
-
 import xml.etree.ElementTree as ET
 
 
 k = kml.KML()
+def distance(origin, destination):
+    lat1, lon1 = origin
+    lat2, lon2 = destination
+    radius = 6371 # km
+    radius = radius*1000*1000 # mm
+
+    dlat = math.radians(lat2-lat1)
+    dlon = math.radians(lon2-lon1)
+    a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) \
+        * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+    d = radius * c
+
+    return d
+
 
 def xml_to_csv(path):
 
@@ -52,11 +65,12 @@ def xml_to_csv(path):
                     segmented_val = 0
                     img_name = glob.glob(subdir + '/*.kml')[0].split("\\")[-1].split(".")[0]
                     value = (subdir, folder_name, img_name,size_array,segmented_val,distress_coords)
-                    print(value)
-                    sys.exit()
+                    #print(value)
+                    #sys.exit()
                     #value = (distress_name, distress_coords)
                 xml_list.append(value)
         column_name = ['Distress Name', 'Distress Coordinates']
+        column_name = ['Directory', 'Folder name','Image name','Size array','Segmented', 'Distress coordiantes']
         xml_df = pd.DataFrame(xml_list, columns=column_name)
     return xml_df
 

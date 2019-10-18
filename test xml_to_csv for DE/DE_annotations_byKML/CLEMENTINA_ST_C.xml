@@ -1,0 +1,1257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pavementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <geospatialInspectionData inspectionDate="08/28/2019" units="English" level="FRAME">
+    <inspectedElement inspectedElementID="0" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="27.409800000011543" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.582788000000996" eastWest="W" />
+        <utm x="-122.41210633" y="37.7742805" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="27.564418989955854" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.429040106710694" eastWest="W" />
+        <utm x="-122.41206362225186" y="37.774323449719432" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="27.493460729683463" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.518537815666527" eastWest="W" />
+        <utm x="-122.41208848272657" y="37.774303739091579" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="6.3107834135435246" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="10.32820711943846" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="1.9540625957156286" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.976363358237347" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="1" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="27.564418989955854" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.429040106710694" eastWest="W" />
+        <utm x="-122.41206362225186" y="37.774323449719432" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="27.692397027390527" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.243768879998392" eastWest="W" />
+        <utm x="-122.41201215802222" y="37.774358999174275" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="27.628387074775375" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.335360730671859" eastWest="W" />
+        <utm x="-122.41203760020296" y="37.774341218631882" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="7.6624235505434264" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="2" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="27.692397027390527" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.243768879998392" eastWest="W" />
+        <utm x="-122.41201215802222" y="37.774358999174275" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="27.827140812416175" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.07193825352207" eastWest="W" />
+        <utm x="-122.41196442729265" y="37.774396428003449" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="27.759611592568191" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.156789730253344" eastWest="W" />
+        <utm x="-122.41198799714729" y="37.774377669886825" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="5.5753852143960021" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.3044522037691806" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="4.7057113350994992" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="1.7784479012995196" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="3" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="27.827140812416175" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="43.07193825352207" eastWest="W" />
+        <utm x="-122.41196442729265" y="37.774396428003449" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="27.962770626458379" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.89592171693122" eastWest="W" />
+        <utm x="-122.41191553381026" y="37.774434102951794" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="27.894462312317316" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.984589168859124" eastWest="W" />
+        <utm x="-122.41194016365802" y="37.774415128420088" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="7.5390273392610974" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="2.9738620218611009" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="2.10963460558543" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="2.2693544928051916" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="4" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="27.962770626458379" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.89592171693122" eastWest="W" />
+        <utm x="-122.41191553381026" y="37.774434102951794" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="28.100952803685388" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.718842222618527" eastWest="W" />
+        <utm x="-122.41186634506184" y="37.774472486889913" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="28.031829411286637" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.807060495906548" eastWest="W" />
+        <utm x="-122.41189085013775" y="37.77445328594758" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="5" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="28.100952803685388" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.718842222618527" eastWest="W" />
+        <utm x="-122.41186634506184" y="37.774472486889913" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="28.240120331772502" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.541723177786174" eastWest="W" />
+        <utm x="-122.41181714532716" y="37.7745111445366" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="28.170162482006546" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.629878785911536" eastWest="W" />
+        <utm x="-122.41184163299609" y="37.774491711800557" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="148.72009110245764" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="38.160942729750296" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="6" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="28.240120331772502" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.541723177786174" eastWest="W" />
+        <utm x="-122.41181714532716" y="37.7745111445366" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="28.378929070432648" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.364607691272262" eastWest="W" />
+        <utm x="-122.41176794658091" y="37.774549702519565" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="28.309433248727302" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.453485721020947" eastWest="W" />
+        <utm x="-122.41179263492251" y="37.774530398124647" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="172.92732547543074" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="9.70208044425124" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="7" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="28.378929070432648" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.364607691272262" eastWest="W" />
+        <utm x="-122.41176794658091" y="37.774549702519565" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="28.518121990585811" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.187369348332517" eastWest="W" />
+        <utm x="-122.41171871370787" y="37.774588367219607" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="28.448587458239373" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.276658236833022" eastWest="W" />
+        <utm x="-122.4117435161769" y="37.774569052071733" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="05" severity="L" quantity="77.049935376820443" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="163.33477891653757" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="8" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="28.518121990585811" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.187369348332517" eastWest="W" />
+        <utm x="-122.41171871370787" y="37.774588367219607" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="28.656529433813873" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.009749196811221" eastWest="W" />
+        <utm x="-122.41166937477689" y="37.774626813731615" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="28.587410772760038" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.098265830552386" eastWest="W" />
+        <utm x="-122.41169396273071" y="37.774607614103545" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="9" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="28.656529433813873" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="42.009749196811221" eastWest="W" />
+        <utm x="-122.41166937477689" y="37.774626813731615" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="28.7954261313494" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.832262725237037" eastWest="W" />
+        <utm x="-122.41162007297923" y="37.7746653961476" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="28.725801809681386" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.921250645194654" eastWest="W" />
+        <utm x="-122.41164479184589" y="37.774646056058245" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="164.70491531011024" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="6.5743655574420892" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="10" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="28.7954261313494" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.832262725237037" eastWest="W" />
+        <utm x="-122.41162007297923" y="37.7746653961476" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="28.9351685705888" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.656304286786884" eastWest="W" />
+        <utm x="-122.41157119563522" y="37.77470421349183" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="28.864434829241461" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.744568463477584" eastWest="W" />
+        <utm x="-122.41159571346208" y="37.774684565230345" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="05" severity="L" quantity="1.7544012190701532" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="3.6598308250169693" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="11" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="28.9351685705888" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.656304286786884" eastWest="W" />
+        <utm x="-122.41157119563522" y="37.77470421349183" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="29.073869196894677" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.480324932050429" eastWest="W" />
+        <utm x="-122.41152231248113" y="37.774742741443582" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="29.004670784518495" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.568557722545087" eastWest="W" />
+        <utm x="-122.4115468215896" y="37.774723519662366" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="05" severity="L" quantity="3.13548021650254" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="158.43508140633355" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="6.1181783946490738" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="4.8254615016431579" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="12" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="29.073869196894677" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.480324932050429" eastWest="W" />
+        <utm x="-122.41152231248113" y="37.774742741443582" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="29.212169225450381" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.305018451524724" eastWest="W" />
+        <utm x="-122.41147361623654" y="37.774781158118181" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="29.143584292082593" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.391748443723976" eastWest="W" />
+        <utm x="-122.41149770790103" y="37.7747621067478" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="13" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="29.212169225450381" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.305018451524724" eastWest="W" />
+        <utm x="-122.41147361623654" y="37.774781158118181" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="29.350124857622674" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.133533764261678" eastWest="W" />
+        <utm x="-122.41142598160118" y="37.774819479127117" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="29.280374608219219" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.220175634797364" eastWest="W" />
+        <utm x="-122.41145004878744" y="37.774800104057839" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="0.16845945127826756" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="14" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="29.350124857622674" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.133533764261678" eastWest="W" />
+        <utm x="-122.41142598160118" y="37.774819479127117" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="29.491861212883165" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.958914203671306" eastWest="W" />
+        <utm x="-122.41137747616769" y="37.774858850336912" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="29.421282726672572" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="41.046452211899044" eastWest="W" />
+        <utm x="-122.41140179228108" y="37.774839245201854" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="15" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="29.491861212883165" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.958914203671306" eastWest="W" />
+        <utm x="-122.41137747616769" y="37.774858850336912" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="29.633822433466818" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.78450599708723" eastWest="W" />
+        <utm x="-122.41132902944364" y="37.774898284009296" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="29.562885952252984" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.87143520841088" eastWest="W" />
+        <utm x="-122.41135317644678" y="37.774878579431181" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="16" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="29.633822433466818" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.78450599708723" eastWest="W" />
+        <utm x="-122.41132902944364" y="37.774898284009296" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="29.774920331580958" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.60988700226509" eastWest="W" />
+        <utm x="-122.4112805241673" y="37.774937477869884" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="29.704461361671221" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.697247392163185" eastWest="W" />
+        <utm x="-122.41130479094227" y="37.7749179059338" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="17" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="29.774920331580958" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.60988700226509" eastWest="W" />
+        <utm x="-122.4112805241673" y="37.774937477869884" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="29.91647714771868" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.436291246689883" eastWest="W" />
+        <utm x="-122.41123230312408" y="37.7749767992077" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="29.845243586947092" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.522499133189662" eastWest="W" />
+        <utm x="-122.41125624975922" y="37.774957012107485" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="18" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="29.91647714771868" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.436291246689883" eastWest="W" />
+        <utm x="-122.41123230312408" y="37.7749767992077" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="30.06015131094766" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.262839254413542" eastWest="W" />
+        <utm x="-122.41118412201512" y="37.775016708697486" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="29.987724085028546" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.349622587931357" eastWest="W" />
+        <utm x="-122.41120822849665" y="37.774996590023619" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="19" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="30.06015131094766" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.262839254413542" eastWest="W" />
+        <utm x="-122.41118412201512" y="37.775016708697486" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="30.202466302150512" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.087771129041052" eastWest="W" />
+        <utm x="-122.41113549198029" y="37.775056240639486" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="30.131353549420894" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.175616617850586" eastWest="W" />
+        <utm x="-122.41115989350496" y="37.775036487097061" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.1770625410197795" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="20" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="30.202466302150512" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="40.087771129041052" eastWest="W" />
+        <utm x="-122.41113549198029" y="37.775056240639486" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="30.345250732317865" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.911907971916129" eastWest="W" />
+        <utm x="-122.41108664110331" y="37.7750959029812" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="30.273660766797363" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.999776649191212" eastWest="W" />
+        <utm x="-122.41111104906922" y="37.775076016879666" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="165.06614528201266" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="39.339879746120879" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="1.9443506034578133" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="1.7562471292301947" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="21" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="30.345250732317865" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.911907971916129" eastWest="W" />
+        <utm x="-122.41108664110331" y="37.7750959029812" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="30.487338400157384" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.735251873603296" eastWest="W" />
+        <utm x="-122.41103756996489" y="37.775135371777822" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="30.416140812197725" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.823513591998029" eastWest="W" />
+        <utm x="-122.41106208710889" y="37.775115594670055" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="1.6843207045204427" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="22" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="30.487338400157384" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.735251873603296" eastWest="W" />
+        <utm x="-122.41103756996489" y="37.775135371777822" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="30.621450331215485" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.553503758830779" eastWest="W" />
+        <utm x="-122.41098708437745" y="37.775172625092004" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="30.5559469399348" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.645426565349375" eastWest="W" />
+        <utm x="-122.41101261849038" y="37.775154429705537" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="136.74814191024447" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="109.46433309366962" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="23" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="30.621450331215485" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.553503758830779" eastWest="W" />
+        <utm x="-122.41098708437745" y="37.775172625092004" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="30.746445688230708" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.36067904557823" eastWest="W" />
+        <utm x="-122.41093352195711" y="37.775207346024509" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="30.685001886197185" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.459042726324391" eastWest="W" />
+        <utm x="-122.41096084520176" y="37.775190278301721" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="06" severity="L" quantity="3.1281435349783751E-05" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="24" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="30.746445688230708" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.36067904557823" eastWest="W" />
+        <utm x="-122.41093352195711" y="37.775207346024509" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="30.862364502566876" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.15639166084808" eastWest="W" />
+        <utm x="-122.41087677546135" y="37.775239545695158" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="30.804591407407813" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.259155987176577" eastWest="W" />
+        <utm x="-122.41090532110755" y="37.775223497613169" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="06" severity="L" quantity="40.840383144185928" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="209.82712687230992" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="1.0050476634871164" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="25" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="30.862364502566876" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.15639166084808" eastWest="W" />
+        <utm x="-122.41087677546135" y="37.775239545695158" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="30.968906958269528" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.948325493877213" eastWest="W" />
+        <utm x="-122.41081897930386" y="37.775269140821742" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="30.911652065090991" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="39.049749426809434" eastWest="W" />
+        <utm x="-122.41084715261856" y="37.775253236684748" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="195.21051872479703" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="27.687955890528059" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="11.914660661858877" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="26" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="30.968906958269528" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.948325493877213" eastWest="W" />
+        <utm x="-122.41081897930386" y="37.775269140821742" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="31.12507839572838" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.779733604244406" eastWest="W" />
+        <utm x="-122.4107721482234" y="37.775312521776591" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="31.042975034971889" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.859764915409791" eastWest="W" />
+        <utm x="-122.41079437914317" y="37.775289715287492" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="05" severity="L" quantity="53.643918990675722" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="169.17568229500046" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="27" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="31.12507839572838" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.779733604244406" eastWest="W" />
+        <utm x="-122.4107721482234" y="37.775312521776591" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="31.278138134026491" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.616449865944482" eastWest="W" />
+        <utm x="-122.41072679162943" y="37.775355038370563" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="31.201270155292306" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.697666827548495" eastWest="W" />
+        <utm x="-122.41074935189654" y="37.775333686154248" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="05" severity="L" quantity="36.221300715064267" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="171.45941243048398" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="13.493983075033075" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="28" size="272.70342077662872" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="31.278138134026491" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.616449865944482" eastWest="W" />
+        <utm x="-122.41072679162943" y="37.775355038370563" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="31.427565856676367" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.448476481059892" eastWest="W" />
+        <utm x="-122.41068013235585" y="37.7753965460713" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="31.35608517149744" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.531779250926014" eastWest="W" />
+        <utm x="-122.41070327201415" y="37.775376690325416" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="05" severity="L" quantity="7.1354752085450484" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="177.8536690786672" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="5.8466470675344846" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="6.2816689601613644" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="29" size="272.70315968248985" PID="CLEMEN::4203000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="31.427565856676367" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.448476481059892" eastWest="W" />
+        <utm x="-122.41068013235585" y="37.7753965460713" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="31.57039901299963" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.281367220767983" eastWest="W" />
+        <utm x="-122.41063371311688" y="37.775436221948056" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="31.498702337395159" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.364735287061571" eastWest="W" />
+        <utm x="-122.41065687091307" y="37.775416306204832" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="169.17510183764415" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="47.300187540085616" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="305.74999999999989" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="2.5421666666666671" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="30" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="31.57039901299963" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.281367220767983" eastWest="W" />
+        <utm x="-122.41063371311688" y="37.775436221948056" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="31.712524649673625" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.112737220487737" eastWest="W" />
+        <utm x="-122.41058687145014" y="37.775475701291576" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="31.641682590619482" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.197376467880908" eastWest="W" />
+        <utm x="-122.41061038235219" y="37.775456022941839" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="168.26234277238319" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.9413963193154138" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.596304648847545" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="9.15102927951439" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="1.8942139610191662" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="3.3627388958124604" comment="" />
+          <levelDistress distressCode="05" severity="M" quantity="3.8803094558265494" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="1.6117877041645619" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="2.4651439011937724" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="31" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="31.712524649673625" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.112737220487737" eastWest="W" />
+        <utm x="-122.41058687145014" y="37.775475701291576" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="31.853966617955322" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.941983119683222" eastWest="W" />
+        <utm x="-122.41053943975547" y="37.77551499072721" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="31.783588274853216" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="38.02707537313146" eastWest="W" />
+        <utm x="-122.41056307649254" y="37.775495441187459" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="5.1677572012883379" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="3.9703380735632035" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="6.4704413930117273" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="4.0340184264108467" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="32" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="31.853966617955322" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.941983119683222" eastWest="W" />
+        <utm x="-122.41053943975547" y="37.77551499072721" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="31.996128590440478" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.7699238122863" eastWest="W" />
+        <utm x="-122.41049164550341" y="37.775554480164011" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="31.9253091025153" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.856491985971765" eastWest="W" />
+        <utm x="-122.41051569221833" y="37.775534808084032" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="0.26285110246349513" comment="" />
+          <levelDistress distressCode="05" severity="M" quantity="0.44333203417707989" comment="" />
+          <levelDistress distressCode="05" severity="M" quantity="0.6759415148817377" comment="" />
+          <levelDistress distressCode="06" severity="H" quantity="4.7117558165606877E-06" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="33" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="31.996128590440478" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.7699238122863" eastWest="W" />
+        <utm x="-122.41049164550341" y="37.775554480164011" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="32.137338018130592" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.597940977886914" eastWest="W" />
+        <utm x="-122.41044387249386" y="37.775593705005036" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="32.067001969848931" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.683698213030461" eastWest="W" />
+        <utm x="-122.41046769394806" y="37.775574167213847" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="06" severity="H" quantity="49.212593713441059" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="60.012185032675156" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="116.35843128925342" comment="" />
+          <levelDistress distressCode="06" severity="M" quantity="6.2823413181941342E-06" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="34" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="32.137338018130592" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.597940977886914" eastWest="W" />
+        <utm x="-122.41044387249386" y="37.775593705005036" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="32.277329241045251" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.425373798371233" eastWest="W" />
+        <utm x="-122.41039593716621" y="37.775632591455846" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="32.2080576721866" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.511305541526021" eastWest="W" />
+        <utm x="-122.41041980709487" y="37.775613349353385" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="06" severity="M" quantity="49.212592142855563" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="06" severity="M" quantity="7.85292681982758E-06" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="35" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="32.277329241045251" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.425373798371233" eastWest="W" />
+        <utm x="-122.41039593716621" y="37.775632591455846" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="32.418201277078353" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.252475466508407" eastWest="W" />
+        <utm x="-122.41034790985181" y="37.775671722576966" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="32.348094844419208" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.338994070424782" eastWest="W" />
+        <utm x="-122.41037194279734" y="37.775652248567894" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="06" severity="M" quantity="49.212590572270059" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="06" severity="M" quantity="9.4235123214610262E-06" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="36" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="32.418201277078353" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.252475466508407" eastWest="W" />
+        <utm x="-122.41034790985181" y="37.775671722576966" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="32.557062247595738" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.078433744367125" eastWest="W" />
+        <utm x="-122.41029956492899" y="37.775710295068777" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="32.488414003130785" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.166053522859023" eastWest="W" />
+        <utm x="-122.41032390375635" y="37.775691226111981" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="06" severity="M" quantity="49.212589001684556" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="06" severity="M" quantity="1.0994097823094474E-05" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="37" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="32.557062247595738" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="37.078433744367125" eastWest="W" />
+        <utm x="-122.41029956492899" y="37.775710295068777" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="32.691232575307751" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.898695975199793" eastWest="W" />
+        <utm x="-122.41024963777089" y="37.775747564604252" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="32.624530031991796" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.988937956895064" eastWest="W" />
+        <utm x="-122.41027470498803" y="37.77572903612" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="06" severity="M" quantity="49.212587431099053" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="5.3312643945806757" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="1.7638498116159367" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="38" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="32.691232575307751" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.898695975199793" eastWest="W" />
+        <utm x="-122.41024963777089" y="37.775747564604252" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="32.826296847010596" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.718410778431611" eastWest="W" />
+        <utm x="-122.41019955854956" y="37.7757850824575" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="32.758788036155508" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.80870395010394" eastWest="W" />
+        <utm x="-122.41022463998614" y="37.775766330010043" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.2118926170743816" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.5905615076465889" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="2.4791708752957011" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="2.1677015195378" comment="" />
+          <levelDistress distressCode="04" severity="M" quantity="2.3812152214553777" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="39" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="32.826296847010596" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.718410778431611" eastWest="W" />
+        <utm x="-122.41019955854956" y="37.7757850824575" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="32.964251914463418" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.540631723389573" eastWest="W" />
+        <utm x="-122.41015017547872" y="37.775823403309573" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="32.895008770099523" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.629185036398361" eastWest="W" />
+        <utm x="-122.41017477362122" y="37.775804169102805" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="40" size="272.70342077662872" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="32.964251914463418" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.540631723389573" eastWest="W" />
+        <utm x="-122.41015017547872" y="37.775823403309573" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="33.107509732564424" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.367329263211936" eastWest="W" />
+        <utm x="-122.41010203590645" y="37.775863197147935" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="33.035194152250071" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.453248151676611" eastWest="W" />
+        <utm x="-122.41012590226436" y="37.775843109486736" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="13.400461784316212" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="2.0865214149563935" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="18.183281164061263" comment="" />
+          <levelDistress distressCode="06" severity="L" quantity="1.7276439829628259E-05" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="41" size="272.70331633897518" PID="CLEMEN::4202000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="33.107509732564424" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.367329263211936" eastWest="W" />
+        <utm x="-122.41010203590645" y="37.775863197147935" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="33.249369346156456" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.194307923083137" eastWest="W" />
+        <utm x="-122.41005397442308" y="37.775902602596155" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="33.180046934639719" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.281571242418444" eastWest="W" />
+        <utm x="-122.410078214234" y="37.775883346370733" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="05" severity="L" quantity="240.72781795141648" comment="" />
+          <levelDistress distressCode="06" severity="L" quantity="49.212581148756357" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="582.66666666666686" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.8724999999999998" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="42" size="272.70342077662872" PID="CLEMEN::4201000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="33.249369346156456" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.194307923083137" eastWest="W" />
+        <utm x="-122.41005397442308" y="37.775902602596155" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="33.361267336856983" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="35.991511993606686" eastWest="W" />
+        <utm x="-122.40999764222045" y="37.775933685371349" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="33.307439401595886" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="36.094909196802895" eastWest="W" />
+        <utm x="-122.41002636366578" y="37.77591873316711" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="06" severity="L" quantity="4.58893101297934E-13" comment="" />
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="06" severity="L" quantity="49.21259842519688" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.915430790384653" comment="" />
+          <levelDistress distressCode="04" severity="L" quantity="3.8391942575686149" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="449.25016700066794" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.9249565798263191" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="43" size="272.70342077662872" PID="CLEMEN::4201000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="33.361267336856983" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="35.991511993606686" eastWest="W" />
+        <utm x="-122.40999764222045" y="37.775933685371349" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="33.485575235999178" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="35.804415262257329" eastWest="W" />
+        <utm x="-122.40994567090618" y="37.775968215343333" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="33.419577262858226" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="35.89454107672956" eastWest="W" />
+        <utm x="-122.40997070585465" y="37.775949882573016" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses>
+          <levelDistress distressCode="08" severity="L" quantity="232.70341900569807" comment="" />
+          <levelDistress distressCode="05" severity="L" quantity="4.7591859239112653" comment="" />
+        </PCIDistresses>
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="449.25016700066794" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.9249565798263191" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+    <inspectedElement inspectedElementID="44" size="271.06724077275311" PID="CLEMEN::4201000">
+      <startLocation>
+        <latitude degrees="37" minutes="46" seconds="33.485575235999178" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="35.804415262257329" eastWest="W" />
+        <utm x="-122.40994567090618" y="37.775968215343333" />
+      </startLocation>
+      <endLocation>
+        <latitude degrees="37" minutes="46" seconds="33.601188000007866" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="35.655012000015553" eastWest="W" />
+        <utm x="-122.40990417" y="37.77600033" />
+      </endLocation>
+      <centerLocation>
+        <latitude degrees="37" minutes="46" seconds="33.553835315853277" northSouth="N" />
+        <longitude degrees="122" minutes="24" seconds="35.717217855202456" eastWest="W" />
+        <utm x="-122.40992144940422" y="37.775987176476626" />
+      </centerLocation>
+      <inspectionData>
+        <PCIDistresses />
+        <conditions>
+          <levelCondition cndMeasure="IRI" source="RSP" condition="449.25016700066794" conditionText="" comment="" />
+          <levelCondition cndMeasure="RN" source="RSP" condition="1.9249565798263191" conditionText="" comment="" />
+        </conditions>
+      </inspectionData>
+    </inspectedElement>
+  </geospatialInspectionData>
+</pavementData>
