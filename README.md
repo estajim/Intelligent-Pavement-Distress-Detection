@@ -20,5 +20,7 @@ Problems so far:
 
 4. in test2.py, you need to make a collection of distresses and assign it to the objects
 
+5. read_ddf_dff.py has good stuff. I tried extracting the info from ddf files but the distress coordinates they have is the projected centerline coords of where the box distresses are (not their centeroids)! So Useless. I'll go back to exported kmls and try to find a coorelation between long lats of each frame and point inside them. (test2.py and create_annotations2.py)
+
 To build to AI model, I am following the link:https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/ with the example dataset in https://github.com/experiencor/kangaroo/tree/master/annots
 
