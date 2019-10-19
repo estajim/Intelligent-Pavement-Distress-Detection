@@ -46,7 +46,7 @@ def create_xml(img_path, folder_name, img_name,size_array,segmented_val,objects)
         current_group = None
         reader = csv.reader(f)
         for row in reader:
-            print(row)
+            #print(row)
             name_value, pose_value, truncated_value, difficult_value, bndbox_value= row
             object = SubElement(root, 'object')
             name = SubElement(object, "name")
@@ -93,7 +93,6 @@ img_name="C"
 print(create_xml(img_path,folder_name,img_name,(100,400,3),0,"objects.csv"))
 
 '''
-
 with open('podcasts.csv', 'rt') as f:
     current_group = None
     reader = csv.reader(f)

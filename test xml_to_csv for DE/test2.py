@@ -32,6 +32,7 @@ def xml_to_csv(path):
     xml_list = []
     for subdir, dirs, files in os.walk(path):
         for xml_file in glob.glob(subdir + '/*.kml'):
+            print(xml_file)
             tree = ET.parse(xml_file)
             root = tree.getroot()
 
@@ -61,9 +62,12 @@ def xml_to_csv(path):
                     #print(distress_name)
                     folder_name = subdir.split("\\")[-1]
                     img_name = xml_file
+                    #print(img_name)
+                    #print(subdir)
                     size_array=(200,500,3)
                     segmented_val = 0
                     img_name = glob.glob(subdir + '/*.kml')[0].split("\\")[-1].split(".")[0]
+                    #print(img_name)
                     value = (subdir, folder_name, img_name,size_array,segmented_val,distress_coords)
                     #print(value)
                     #sys.exit()
