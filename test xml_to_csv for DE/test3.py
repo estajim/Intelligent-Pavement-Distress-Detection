@@ -9,6 +9,9 @@ import math
 from fastkml import kml
 import xml.etree.ElementTree as ET
 import numpy as np
+import geopy
+from geopy.distance import VincentyDistance
+
 k = kml.KML()
 
 w_frame = 13.64173
@@ -173,15 +176,112 @@ data = pd.merge(kml_data[['Directory', 'Folder name', 'SectionName', 'Size array
 print("KML and DFF are merged into one unique dataframe, called data (size : {}) "
       "and the following selected columns:\n{}"
       .format(data.shape,list(data.columns)))
-def is_inside(min,test,max):
-    if abs(test)>= abs(min) and abs(test) <= abs(max):
-        return True
+def calc_bearing(pointA, pointB):
+    lat1 = math.radians(pointA[0])
+    lat2 = math.radians(pointB[0])
+    lon1 = math.radians(pointA[1])
+    lon2 = math.radians(pointB[1])
+
+    y = math.sin(lon2-lon1) * math.cos(lat2)
+    x = math.cos(lat1) * math.sin(lat2) - \
+        math.sin(lat1) * math.cos(lat2) * math.cos(lon2-lon1)
+    bearing = math.degrees(math.atan2(y, x))
+    return bearing
+
+def find_frame_corners(start,end):
+    bearing=calc_bearing(start,end)
+    bearing_perpendicular_left = bearing - 90
+    bearing_perpendicular_right = bearing + 90
+    # Define a general distance object, initialized with a distance of 1 ft wrt km.
+    d = geopy.distance.VincentyDistance(kilometers=0.0003048)
+    # Use the `destination` method with a bearing of 0 degrees (which is north)
+    # in order to go from point `start` 1 km to north.
+    bottom_left = d.destination(point=start, bearing=bearing_perpendicular_left)
+    bottom_right = d.destination(point=start, bearing=bearing_perpendicular_right)
+    top_left = d.destination(point=end, bearing=bearing_perpendicular_left)
+    top_right = d.destination(point=end, bearing=bearing_perpendicular_right)
+    return bottom_left,bottom_right,top_left,top_right
+    #bottom_left = geopy.destination(start, bearing_perpendicular_left)
+    #print(bottom_left)
+
+def is_inside2(point, frame_corners):
+    frame_height = 20
+    frame_width = 13.64173
+    max_distance = math.sqrt((frame_height**2+(frame_width/2)**2))+frame_width/2
+    bottom_left, bottom_right, top_left, top_right = frame_corners
+
+    # Method 2 compare each point to the corners and make sure the point is inside
+    if (abs(point[0])>= abs(bottom_left[0]) and abs(point[0]) <= abs(bottom_right[0])) or\
+       (abs(point[0])>= abs(bottom_right[0]) and abs(point[0]) <= abs(bottom_left[0])):
+        if (abs(point[1])>= abs(top_left[1]) and abs(point[1]) <= abs(top_right[1])) or\
+           (abs(point[1])>= abs(top_right[1]) and abs(point[1]) <= abs(top_left[1])):
+            return True
+        else:
+            return False
     else:
         return False
 
+def is_inside3(point,start,end):
+    frame_height = 20
+    frame_width = 13.64173
+    max_distance = math.sqrt((frame_height**2+(frame_width/2)**2))+frame_width/2 # close to 27 ft
+    # Method 3 compare the SUM distance of start and end to the point and the max_distance
+
+    if geopy.distance.distance(point,start).feet+geopy.distance.distance(point,end).feet <= max_distance+1:
+        #print(geopy.distance.distance(point,start).feet+geopy.distance.distance(point,end).feet)
+        return True
+    else:
+        return False
+def find_its_image3(coords,data):
+    inside_count = 0
+    #print(coords)
+    # start with one coord and find the first match. Then check the other coords and make sure they are inside the frame range as well.
+    check_coord = coords[0]
+    check_coord = geopy.Point(check_coord[1], check_coord[0])
+    for i in range(data.shape[0]):
+        start = (float(data.iloc[i, 7]), float(data.iloc[i,8]))   #7 From_GPS_Lon and 8 From_GPS_Lat
+        end = (float(data.iloc[i, 9]), float(data.iloc[i, 10]))     #9 To_GPS_Lon and 10 To_GPS_Lon
+        if is_inside3(check_coord, start, end):
+            #sys.exit()
+            for coord in coords[1:]:
+                coord = geopy.Point(coord[1], coord[0])
+                if is_inside3(coord,start,end):
+                    inside_count += 1
+            if inside_count == 4:
+                print(i)
+                print(list(data.iloc[i,:]))
+                return data.iloc[i, 6]
+            else:
+                return 'NA'  # Later you need to drop this row of data since the distress box
+                # is either not found or between two frames.
+
+def find_its_image2(coords,data):
+    inside_count = 0
+    #print(coords)
+    # start with one coord and find the first match. Then check the other coords and make sure they are inside the frame range as well.
+    check_coord = coords[0]
+    check_coord = geopy.Point(check_coord[1], check_coord[0])
+    for i in range(data.shape[0]):
+        start = (float(data.iloc[i,7]),float(data.iloc[i,8]))   #7 From_GPS_Lon and 8 From_GPS_Lat
+        end = (float(data.iloc[i,9]),float(data.iloc[i,10]))     #9 To_GPS_Lon and 10 To_GPS_Lon
+        frame_corners = find_frame_corners(start,end)
+        if is_inside2(check_coord,frame_corners):
+
+            #print('stop here')
+            #sys.exit()
+            for coord in coords[1:]:
+                coord = geopy.Point(coord[1], coord[0])
+                if is_inside2(coord,frame_corners):
+                    inside_count += 1
+            if inside_count == 4:
+                return data.iloc[i, 6]
+            else:
+                return 'NA'  # Later you need to drop this row of data since the distress box
+                # is either not found or between two frames.
+
 def find_its_image(coords,data):
     inside_count = 0
-    print(coords)
+    #print(coords)
     # start with one coord and find the first match. Then check the other coords and make sure they are inside the frame range as well.
     check_coord = coords [0]
     for i in range(data.shape[0]):
@@ -202,7 +302,11 @@ def find_its_image(coords,data):
                 return 'NA' # Later you need to drop this row of data since the distress box
                             # is either not found or between two frames.
 data.to_csv('data_merged_before.csv',index=False)
+print(data[['ImageName']])
+sys.exit()
+# As you can see each row in the data has its own imageName. but when you remove sys.exit()
+# you will see that in the find_its_image3 the same name, although with different i  is found
 for i in range(data.shape[0]):
-    data.iloc[i,6] = find_its_image(data.iloc[i,5],data)
+    data.iloc[i,6] = find_its_image3(data.iloc[i,5],data)
 print(data[['ImageName']])
 data.to_csv('data_merged_after.csv',index=False)
