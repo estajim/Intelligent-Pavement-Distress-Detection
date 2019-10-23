@@ -52,7 +52,6 @@ def xml_to_csv(path):
                 for placemark_features in placemark:
                     if placemark_features.tag == '{http://www.opengis.net/kml/2.2}name':
                         distress_name = placemark_features.text
-                #print(LineString)
                     if placemark_features.tag == '{http://www.opengis.net/kml/2.2}description':
                         severity = placemark_features.text
                         severity = int(re.findall(r': (.*)\n',severity)[0])+1
@@ -80,12 +79,8 @@ def xml_to_csv(path):
                     size_array=(13.64173,20,3)  # in ft
                     segmented_val = 0
                     section_name = xml_file.split("\\")[-1].split(".")[0]
-                    #print(img_name)
-                    #sys.exit()
                     value = (subdir, folder_name, section_name,distress_name,severity, size_array,segmented_val,distress_coords)
-                    #print(value)
-                    #sys.exit()
-                    #value = (distress_name, distress_coords)
+
                 xml_list.append(value)
         column_name = ['Distress Name', 'Distress Coordinates']
         column_name = ['Directory', 'Folder name','SectionName','Distress','Severity','Size array','Segmented', 'Distress coordiantes']
@@ -142,9 +137,10 @@ def load_data(file_path):
             #print(filter_blank_out(line_modified.split(" ")))
             #sys.exit()
             input_lines.append(line_filtered_modified)
-    ddf_np=np.asarray(input_lines)
-    return rsp_file, ddf_np
+    dff_np=np.asarray(input_lines)
+    return rsp_file, dff_np
 for dff_path in glob.glob(path + '/*.dff'):  # Frame information
+    print(dff_path)
     #print(type(xml_file))
     #sys.exit()
     dff_np = load_data(dff_path)[1]
@@ -163,11 +159,15 @@ for dff_path in glob.glob(path + '/*.dff'):  # Frame information
     dff_data['SectionName'] = RSP_name
     # print(dff_data['ImageName'])
     try:
-        dff_all.append(dff_data, ignore_index=True)
+        dff_all = dff_all.append(dff_data, ignore_index=True)
+        #print(dff_data.shape)
+        #print(dff_all.shape)
     except NameError:
         dff_all=dff_data
+        #print(dff_data.shape)
 print("Size of DFF file: {}".format(dff_all.shape))
 dff_data=dff_all
+#print(dff_data.shape)
 
 # ================================================= Merge KML and DFF data =============================================
 kml_data.columns = ['Directory', 'FolderName', 'SectionName', 'Distress', 'Severity',
@@ -215,24 +215,8 @@ def find_frame_corners(start,end):
     #bottom_left = geopy.destination(start, bearing_perpendicular_left)
     #print(bottom_left)
 
-def is_inside2(point, frame_corners):
-    frame_height = 20
-    frame_width = 13.64173
-    max_distance = math.sqrt((frame_height**2+(frame_width/2)**2))+frame_width/2
-    bottom_left, bottom_right, top_left, top_right = frame_corners
 
-    # Method 2 compare each point to the corners and make sure the point is inside
-    if (abs(point[0])>= abs(bottom_left[0]) and abs(point[0]) <= abs(bottom_right[0])) or\
-       (abs(point[0])>= abs(bottom_right[0]) and abs(point[0]) <= abs(bottom_left[0])):
-        if (abs(point[1])>= abs(top_left[1]) and abs(point[1]) <= abs(top_right[1])) or\
-           (abs(point[1])>= abs(top_right[1]) and abs(point[1]) <= abs(top_left[1])):
-            return True
-        else:
-            return False
-    else:
-        return False
-
-def is_inside3(point,start,end):
+def is_inside(point,start,end):
     frame_height = 20
     frame_width = 13.64173
     max_distance = math.sqrt((frame_height**2+(frame_width/2)**2))+frame_width/2 # close to 27 ft
@@ -243,93 +227,6 @@ def is_inside3(point,start,end):
         return True
     else:
         return False
-def find_its_image3(coords,data):
-    inside_count = 0
-    #print(coords)
-    # start with one coord and find the first match. Then check the other coords and make sure they are inside the frame range as well.
-    check_coord = coords[0]
-    check_coord = geopy.Point(check_coord[1], check_coord[0])
-    for i in range(data.shape[0]):
-        start = (float(data.iloc[i, 9]), float(data.iloc[i,10]))   #7 From_GPS_Lon and 8 From_GPS_Lat
-        end = (float(data.iloc[i, 11]), float(data.iloc[i, 12]))     #9 To_GPS_Lon and 10 To_GPS_Lon
-        if is_inside3(check_coord, start, end):
-            #sys.exit()
-            for coord in coords[1:]:
-                coord = geopy.Point(coord[1], coord[0])
-                if is_inside3(coord,start,end):
-                    inside_count += 1
-            if inside_count == 4:
-                print(i)
-                print(list(data.iloc[i,:]))
-                return data.iloc[i, 8]
-            else:
-                return 'NA'  # Later you need to drop this row of data since the distress box
-                # is either not found or between two frames.
-
-def find_its_image2(coords,data):
-    inside_count = 0
-    #print(coords)
-    # start with one coord and find the first match. Then check the other coords and make sure they are inside the frame range as well.
-    check_coord = coords[0]
-    check_coord = geopy.Point(check_coord[1], check_coord[0])
-    for i in range(data.shape[0]):
-        start = (float(data.iloc[i,9]),float(data.iloc[i,10]))   #7 From_GPS_Lon and 8 From_GPS_Lat
-        end = (float(data.iloc[i,11]),float(data.iloc[i,12]))     #9 To_GPS_Lon and 10 To_GPS_Lon
-        frame_corners = find_frame_corners(start,end)
-        if is_inside2(check_coord,frame_corners):
-
-            #print('stop here')
-            #sys.exit()
-            for coord in coords[1:]:
-                coord = geopy.Point(coord[1], coord[0])
-                if is_inside2(coord,frame_corners):
-                    inside_count += 1
-            if inside_count == 4:
-                return data.iloc[i, 8]
-            else:
-                return 'NA'  # Later you need to drop this row of data since the distress box
-                # is either not found or between two frames.
-
-def find_its_image(coords,data):
-    inside_count = 0
-    #print(coords)
-    # start with one coord and find the first match. Then check the other coords and make sure they are inside the frame range as well.
-    check_coord = coords [0]
-    for i in range(data.shape[0]):
-        start = float(data.iloc[i,7])   #7 From_GPS_Lon and 8 From_GPS_Lat
-        end = float(data.iloc[i,9])     #9 To_GPS_Lon and 10 To_GPS_Lon
-        #print(start)
-        #print(end)
-        #print(check_coord[1])
-        #print("================")
-        #sys.exit()
-        if is_inside(start,check_coord[1],end):
-            for coord in coords[1:]:
-                if is_inside(start, coord[1], end):
-                    inside_count+=1
-            if inside_count == 4:
-                return data.iloc[i,6]
-            else:
-                return 'NA' # Later you need to drop this row of data since the distress box
-                            # is either not found or between two frames.
-#data.to_csv('data_merged_before.csv',index=False)
-#print(data[['ImageName']])
-#sys.exit()
-# As you can see each row in the data has its own imageName. but when you remove sys.exit()
-# you will see that in the find_its_image3 the same name, although with different i  is found
-#for i in range(data.shape[0]):
-#    #print(data.iloc[i, :])
-#    #sys.exit()
-#    data.iloc[i,8] = find_its_image3(data.iloc[i,7],data)
-#print(data[['ImageName']])
-#data.to_csv('data_merged_after.csv',index=False)
-
-
-
-
-
-
-
 
 
 
@@ -345,7 +242,7 @@ kml_data['ImageName']=""
 print("DFF data columns:\t{}".format(list(dff_data.columns)))
 print("KML data columns:\t{}".format(list(kml_data.columns)))
 
-def find_its_image4(coords,data):
+def find_its_image(coords,data):
     inside_count = 0
     #print(coords)
     # start with one coord and find the first match. Then check the other coords and make sure they are inside the frame range as well.
@@ -354,11 +251,11 @@ def find_its_image4(coords,data):
     for i in range(data.shape[0]):
         start = (float(data.iloc[i, 3]), float(data.iloc[i,4]))   #3 From_GPS_Lon and 4 From_GPS_Lat
         end = (float(data.iloc[i, 6]), float(data.iloc[i, 7]))   #6 To_GPS_Lon and 7 To_GPS_Lon
-        if is_inside3(check_coord, start, end):
+        if is_inside(check_coord, start, end):
             #sys.exit()
             for coord in coords[1:]:
                 coord = geopy.Point(coord[1], coord[0])
-                if is_inside3(coord,start,end):
+                if is_inside(coord,start,end):
                     inside_count += 1
             if inside_count == 4:
                 #print(i)
@@ -373,7 +270,7 @@ kml_data.to_csv('data_merged_before.csv',index=False)
 for i in range(kml_data.shape[0]):
     #print(data.iloc[i, :])
     #sys.exit()
-    kml_data.iloc[i,-1] = find_its_image4(kml_data.iloc[i,7],dff_data)
+    kml_data.iloc[i,-1] = find_its_image(kml_data.iloc[i,7],dff_data)
 print(kml_data.shape)
 kml_data.to_csv('data_merged_after.csv',index=False)
 #print(kml_data[['ImageName']])
