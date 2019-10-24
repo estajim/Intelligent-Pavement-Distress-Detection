@@ -12,6 +12,8 @@ import numpy as np
 import geopy
 from geopy.distance import VincentyDistance
 import re
+from PIL import Image, ImageFont, ImageDraw, ImageEnhance
+
 
 k = kml.KML()
 
@@ -204,13 +206,22 @@ def find_frame_corners(start,end):
     bearing_perpendicular_left = bearing - 90
     bearing_perpendicular_right = bearing + 90
     # Define a general distance object, initialized with a distance of 1 ft wrt km.
-    d = geopy.distance.VincentyDistance(kilometers=0.0003048)
+    #d = geopy.distance.VincentyDistance(kilometers=0.0003048)
+    d = geopy.distance.geodesic(kilometers=0.0003048)
     # Use the `destination` method with a bearing of 0 degrees (which is north)
     # in order to go from point `start` 1 km to north.
     bottom_left = d.destination(point=start, bearing=bearing_perpendicular_left)
+    bottom_left = (bottom_left.latitude,bottom_left.longitude)
+
     bottom_right = d.destination(point=start, bearing=bearing_perpendicular_right)
+    bottom_right = (bottom_right.latitude,bottom_right.longitude)
+
     top_left = d.destination(point=end, bearing=bearing_perpendicular_left)
+    top_left = (top_left.latitude,top_left.longitude)
+
     top_right = d.destination(point=end, bearing=bearing_perpendicular_right)
+    top_right = (top_right.latitude,top_right.longitude)
+
     return bottom_left,bottom_right,top_left,top_right
     #bottom_left = geopy.destination(start, bearing_perpendicular_left)
     #print(bottom_left)
@@ -222,7 +233,7 @@ def is_inside(point,start,end):
     max_distance = math.sqrt((frame_height**2+(frame_width/2)**2))+frame_width/2 # close to 27 ft
     # Method 3 compare the SUM distance of start and end to the point and the max_distance
 
-    if geopy.distance.distance(point,start).feet+geopy.distance.distance(point,end).feet <= max_distance+1:
+    if geopy.distance.distance(point,start).feet+geopy.distance.distance(point,end).feet <= max_distance:
         #print(geopy.distance.distance(point,start).feet+geopy.distance.distance(point,end).feet)
         return True
     else:
@@ -234,16 +245,17 @@ def is_inside(point,start,end):
 kml_data.columns = ['Directory', 'FolderName', 'SectionName', 'Distress', 'Severity',
        'Size array', 'Segmented', 'Distress coordiantes']
 # Add dff needed columns
-kml_data['From_GPS_Lon']=""
-kml_data['From_GPS_Lat']=""
-kml_data['To_GPS_Lon']=""
-kml_data['To_GPS_Lat']=""
+kml_data['bottom_left']=""
+kml_data['bottom_right']=""
+kml_data['top_left']=""
+kml_data['top_right']=""
 kml_data['ImageName']=""
 print("DFF data columns:\t{}".format(list(dff_data.columns)))
 print("KML data columns:\t{}".format(list(kml_data.columns)))
 
 def find_its_image(coords,data):
     inside_count = 0
+    distress_found = False
     #print(coords)
     # start with one coord and find the first match. Then check the other coords and make sure they are inside the frame range as well.
     check_coord = coords[0]
@@ -251,8 +263,9 @@ def find_its_image(coords,data):
     for i in range(data.shape[0]):
         start = (float(data.iloc[i, 3]), float(data.iloc[i,4]))   #3 From_GPS_Lon and 4 From_GPS_Lat
         end = (float(data.iloc[i, 6]), float(data.iloc[i, 7]))   #6 To_GPS_Lon and 7 To_GPS_Lon
+        bottom_left, bottom_right, top_left, top_right = find_frame_corners(start, end)
         if is_inside(check_coord, start, end):
-            #sys.exit()
+            distress_found = True
             for coord in coords[1:]:
                 coord = geopy.Point(coord[1], coord[0])
                 if is_inside(coord,start,end):
@@ -260,21 +273,35 @@ def find_its_image(coords,data):
             if inside_count == 4:
                 #print(i)
                 #print(list(data.iloc[i,:]))
-                return data.iloc[i, -2]
+                #print(bottom_left, bottom_right, top_left, top_right)
+                return bottom_left, bottom_right, top_left, top_right, data.iloc[i, -2]
             else:
-                return 'NA'  # Later you need to drop this row of data since the distress box
+                return bottom_left, bottom_right, top_left, top_right, 'Between two frames'  # Later you need to drop this row of data since the distress box
                 # is either not found or between two frames.
+    if not distress_found:
+        return 'NA', 'NA', 'NA', 'NA', 'NA'
+
 print(kml_data.shape)
 kml_data.to_csv('data_merged_before.csv',index=False)
 
 for i in range(kml_data.shape[0]):
     #print(data.iloc[i, :])
     #sys.exit()
-    kml_data.iloc[i,-1] = find_its_image(kml_data.iloc[i,7],dff_data)
+    out = find_its_image(kml_data.iloc[i,7],dff_data)
+    kml_data.iloc[i, -1] = out[-1] # Image name
+    kml_data.iloc[i, -2] = str(out[-2]) # top_right
+    kml_data.iloc[i, -3] = str(out[-3]) # top_left
+    kml_data.iloc[i, -4] = str(out[-4]) # bottom_right
+    kml_data.iloc[i, -5] = str(out[-5]) # bottom_left
 print(kml_data.shape)
 kml_data.to_csv('data_merged_after.csv',index=False)
+
+
+def draw_box(data):
+    for i in range(data.shape[0]):
+        print("hi")
+        exit()
 #print(kml_data[['ImageName']])
-sys.exit()
 
 #data.to_csv('data_merged_before.csv',index=False)
 #print(data[['ImageName']])
