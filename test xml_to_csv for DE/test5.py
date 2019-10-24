@@ -119,7 +119,6 @@ kml_data = kml_data.loc[ kml_data['Distress'] == 'Patching and Utility Cuts_MTC'
 print(kml_data[['Distress','FrameCoords','ImageName']])
 #print(kml_data['FrameCoords'])
 #sys.exit()
-kml_data.to_csv('training_from_KML.csv', index=None)
 
 print("Size of KML file: {}".format(kml_data.shape))
 def calc_bearing2(pointA, pointB):
@@ -215,10 +214,15 @@ def convert_coords(distress_coords,frame_coords):
     h = geopy.distance.distance(frame_BL, frame_TL).feet
     print(find_frame_corners(frame_coords[:-1]))
     print(find_distress_corners(distress_coords[:-1]))
-
-
+    from pyproj import Proj, transform
+    inProj = Proj(init='epsg:4326')
+    outProj = Proj(init='epsg:32610')
+    y1, x1  = frame_BL
+    print(x1,y1)
+    x2, y2 = transform(inProj, outProj, x1, y1)
+    print(x2,y2)
     #print(calc_angle(frame_BL, distress_BL, frame_BR))
-    #sys.exit()
+    sys.exit()
     BL = convert_coord(frame_BL, distress_BL, frame_BR,w, h)
     BR = convert_coord(frame_BL, distress_BR, frame_BR,w, h)
     TL = convert_coord(frame_BL, distress_TL, frame_BR,w, h)
@@ -226,19 +230,71 @@ def convert_coords(distress_coords,frame_coords):
     print([BL,BR, TL, TR])
     sys.exit()
     return [BL,BR, TL, TR]
+from pyproj import Proj, transform
+def convert_coord2(coord):
+    inProj = Proj(init='epsg:4326')
+    outProj = Proj(init='epsg:32610')
+    y1, x1 = coord
+    #print(x1, y1)
+    x2, y2 = transform(inProj, outProj, x1, y1)
+    return 3.28084 * np.asarray([x2, y2]) # in feet
+def rotate(xy, radians):
+    """Only rotate a point around the origin (0, 0)."""
+    x, y = xy
+    xx = x * math.cos(radians) + y * math.sin(radians)
+    yy = -x * math.sin(radians) + y * math.cos(radians)
+
+    return xx, yy
+
+def convert_coords2(distress_coords,frame_coords):
+    frame_BL, frame_BR, frame_TL, frame_TR  = find_frame_corners(frame_coords[:-1])
+    distress_BL, distress_BR, distress_TL, distress_TR = find_distress_corners(distress_coords[:-1])
+    w = geopy.distance.distance(frame_BL, frame_BR).feet
+    h = geopy.distance.distance(frame_BL, frame_TL).feet
+    frame_BL = convert_coord2(frame_BL)
+    frame_BR = convert_coord2(frame_BR) - frame_BL
+    frame_TL = convert_coord2(frame_TL) - frame_BL
+    frame_TR = convert_coord2(frame_TR) - frame_BL
+    distress_BL = convert_coord2(distress_BL) - frame_BL
+    distress_BR = convert_coord2(distress_BR) - frame_BL
+    distress_TL = convert_coord2(distress_TL) - frame_BL
+    distress_TR = convert_coord2(distress_TR) - frame_BL
+    frame_BL-=frame_BL # set the origin to frame_BL
+
+    rotation_angle = math.atan2(frame_BR[1],frame_BR[0])
+    frame_BL = np.round(rotate(frame_BL,rotation_angle),1)
+    frame_BR = np.round(rotate(frame_BR, rotation_angle),1)
+    frame_TL = np.round(rotate(frame_TL, rotation_angle),1)
+    frame_TR = np.round(rotate(frame_TR, rotation_angle),1)
+    BL = np.round(rotate(distress_BL,rotation_angle),1)
+    BR = np.round(rotate(distress_BR, rotation_angle),1)
+    TL = np.round(rotate(distress_TL, rotation_angle),1)
+    TR = np.round(rotate(distress_TR, rotation_angle),1)
+    #print(frame_BL)
+    #print(frame_BR)
+    #print(frame_TL)
+    #print(frame_TR)
+    #print(distress_BL)
+    #print(distress_BR)
+    #print(distress_TL)
+    #print(distress_TR)
+
+    #sys.exit()
+
+    return [BL,BR, TL, TR]
+
 frame_height = 20
 frame_width = 13.64173
-converted_coords = list()
+converted_coords_list = list()
 
 for i in range(kml_data.shape[0]):
     #print(kml_data.iloc[i, 7])
     #print(kml_data.iloc[i, 8])
     #sys.exit()
-    print(convert_coords(kml_data.iloc[i,7],kml_data.iloc[i,8]))
-    #print(find_frame_corners(kml_data.iloc[i,7]))
-    #print(find_frame_corners(kml_data.iloc[i, 8]))
-    sys.exit()
-
+    converted_coords = convert_coords2(kml_data.iloc[i,7],kml_data.iloc[i,8])
+    converted_coords_list.append(converted_coords)
+kml_data['ConvertedCoordinates']=converted_coords_list
+kml_data.to_csv('training_from_KML.csv', index=None)
 
 def draw_box(data):
     for i in range(data.shape[0]):
