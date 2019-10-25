@@ -23,5 +23,7 @@ Problems so far:
 5. read_ddf_dff.py has good stuff. I tried extracting the info from ddf files but the distress coordinates they have is the projected centerline coords of where the box distresses are (not their centeroids)! So Useless. 
 Update on 5: work on test3.py where the KML and DFF files are merged. The goal is to find the correct image name on the merged dataframe. Currently, mergying mechanism is for some reason wrong. duplicates are creadted for each distress coordinate list. you can check this by opening the data_merged_before array. Work on this!
 
+6. Add images - Move old scripts to Archive - load_dataset and visualize_dataset work now - Need to fix two things, 1. figure out why the first rwo of the dataset has an empty imagename, 2. find out a way to eathier bypass images longer than one frame or use them in a more meaningful way
+
 To build to AI model, I am following the link:https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/ with the example dataset in https://github.com/experiencor/kangaroo/tree/master/annots
 
