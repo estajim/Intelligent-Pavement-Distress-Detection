@@ -25,3 +25,15 @@ Update on 5: work on test3.py where the KML and DFF files are merged. The goal i
 
 To build to AI model, I am following the link:https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/ with the example dataset in https://github.com/experiencor/kangaroo/tree/master/annots
 
+
+
+Model structure as of 10/26/2019
+
+load_dataset_ft.py    creates csv file representing the datase with ft values of the boxes in the frame which can be used in visualize_dataset.py
+
+load_dataset_pixel.py    creates csv file representing the datase with pixel values of the boxes in the frame. The CSV output of this script is input to create_RLE.py.  This scritp also cropps the images to (2^10, 2^6*23) = (1024,1472)
+
+RLE.py    which imports the dataset created by load_dataset_pixel.py and prepares a csv file that can be used for Mask RCNN script (demo_ship_me.py) 
+
+
+
