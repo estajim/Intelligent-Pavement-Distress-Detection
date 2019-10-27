@@ -33,7 +33,7 @@ load_dataset_ft.py    creates csv file representing the datase with ft values of
 
 load_dataset_pixel.py    creates csv file representing the datase with pixel values of the boxes in the frame. The CSV output of this script is input to create_RLE.py.  This scritp also cropps the images to (2^10, 2^6*23) = (1024,1472)
 
-RLE.py    which imports the dataset created by load_dataset_pixel.py and prepares a csv file that can be used for Mask RCNN script (demo_ship_me.py) 
+create_RLE.py    which imports the dataset created by load_dataset_pixel.py and prepares a csv file that can be used for Mask RCNN script (demo_ship_me.py) 
 
 
 
